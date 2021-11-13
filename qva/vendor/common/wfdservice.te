@@ -58,5 +58,8 @@ r_dir_file(wfdservice, proc_audiod)
 # Fix sink avc denials
 allow wfdservice mediametrics:binder call;
 allow wfdservice vendor_audio_prop:file read;
+allow wfdservice vendor_mm_osal_prop:file read;
 allow wfdservice vendor_audio_prop:file open;
+allow wfdservice vendor_mm_osal_prop:file open;
 allow wfdservice vendor_audio_prop:file getattr;
+allow wfdservice vendor_mm_osal_prop:file getattr;
